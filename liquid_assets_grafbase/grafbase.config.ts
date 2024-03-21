@@ -2,7 +2,7 @@ import { graph, connector, config } from '@grafbase/sdk';
 
 const g = graph.Standalone();
 const liquidAsset = connector.OpenAPI('asset', {
-  schema: 'https://raw.githubusercontent.com/SajjaRekhaSamrajyutha/liquid-assets/main/openAPI.yaml',
+  schema: 'https://raw.githubusercontent.com/5060Rekha/Assets/main/liquid_assets_grafbase/openAPI.yaml',
   url: "https://blockstream.info/liquid/api/",
 });
 g.datasource(liquidAsset);
